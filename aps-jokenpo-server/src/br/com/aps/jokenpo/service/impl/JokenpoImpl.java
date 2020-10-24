@@ -16,11 +16,8 @@ public class JokenpoImpl implements Jokenpo {
 	@Override
 	public Partida verificaJogada(Partida partida, OpcaoEnum jogadaPrimeiroJogador, OpcaoEnum jogadaSegundoJogador) {
 		AcaoImpl acao = AcaoImpl.getInstance();
-
 		Partida resultado = getGanhador(partida, jogadaPrimeiroJogador, jogadaSegundoJogador);
-
 		acao.getPartida(resultado);
-
 		return resultado;
 	}
 
